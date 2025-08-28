@@ -1,0 +1,149 @@
+.navbar {
+  padding: 20px 0px;
+}
+
+.navDiv {
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.anchor {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+
+  padding: 10px 14px;
+}
+
+.anchor a{
+
+  color: black;
+}
+.active a{
+  color: #262626;;
+}
+
+.button {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  border: none;
+  padding: 18px 24px;
+  color: white;
+  background: #1e72be;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  max-width: 144px;
+}
+
+.button:hover {
+  background: #66b8ff;
+}
+.logoContainer{
+    max-width:  107px;
+    height: auto;
+}
+
+/* Hamburger button (desktop hidden) */
+.toggler {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2100;
+}
+
+/* Close button inside mobile menu */
+.closeBtn {
+  display: none;
+}
+
+.logoContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.showMenu{
+    
+    display: none;
+}
+
+.mobileButton {
+  display: none;
+}
+
+/* ---------------- Mobile Styles ---------------- */
+@media (max-width: 1024px) {
+
+  .navA {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    z-index: 2000;
+    
+    /* Slide out of view by default */
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  
+  .showMenu {
+    transform: translateX(0); /* Slide into view */
+    z-index: 3;
+  }
+  .logoContainer{
+    width: 70px;
+  }
+
+  .toggler {
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+
+  .button {
+    display: none; /* hide desktop button */
+  }
+
+  .mobileButton {
+    display: block;
+  }
+
+  .closeBtn {
+    display: block; /* show close button on mobile */
+    align-self: flex-end;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 2%;
+    margin-right: 10%;
+  }
+}
+
