@@ -1,0 +1,20 @@
+
+.btn {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  border: none;
+  padding: 18px 24px;
+  color: white;
+  background: #1e72be;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  /* max-width: 144px; */
+  display: flex;
+  gap: 12px;
+}
+
+.btn:hover {
+  background: #66b8ff;
+}

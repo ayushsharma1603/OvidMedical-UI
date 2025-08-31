@@ -9,6 +9,13 @@ a {
   text-decoration: none;
 }
 
+h1{
+  font-size: 48px;
+}
+p{
+  font-size: 24px;
+}
+
 /* Global typography */
 html,
 body {
@@ -16,6 +23,7 @@ body {
   background-color: #fff;
   color: #000;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -35,3 +43,15 @@ h1, h2, h3, h4, h5, h6, p {
     padding-right: 0;
   }
 }
+
+
+@media (max-width:426px) {
+  h1{
+    font-size: 20px;
+    line-height: 27px !important;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+

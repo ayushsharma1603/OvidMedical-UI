@@ -2,6 +2,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
+import Frame83 from "@/components/Frame83";
+import Frame66 from "@/components/Frame66";
+import Frame61 from "@/components/Frame61";
+import Frame70 from "@/components/Frame70";
+import Frame72 from "@/components/Frame72";
+import Frame51 from "@/components/Frame51";
+import Foot from "@/components/Foot";
+import Frame81 from "@/components/Frame81";
 
 // ✅ New way: metadata for title, description, etc.
 export const metadata = {
@@ -15,6 +23,14 @@ export default function Home() {
       <header>
         <Navbar />
         <Carousel />
+        <Frame83/>
+        <Frame66/>
+        <Frame61/>
+        <Frame70/>
+        <Frame72/>
+        <Frame81/>
+        <Frame51/>
+        <Foot/>
       </header>
       <main className={styles.main}></main>
       <footer className={styles.footer}></footer>

@@ -1,0 +1,251 @@
+.frame61{
+    display: flex;
+    /* padding: 80px 31px; */
+    /* gap: 80px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+.frame60{
+    max-width: 832px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+.frame60 h1 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.frame60 p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+  text-align: center;
+}
+
+.item{
+    width: 49.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 31px;
+    border-radius: 32px;
+    background-color: #E1F3FD;
+    padding-top: 30px;
+    /* max-height: 690px; */
+    /* padding-bottom: 5px; */
+}
+
+/* Target all product card images */
+/* Select the <img> inside Next.js <Image /> */
+.pCardImg :global(img),
+.pcard3 :global(img),
+.pcard4 :global(img) {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.row1{
+    padding: 0;margin: 0;
+    width: 100%;
+    
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.firstRow{
+    margin-top: 80px;
+}
+.item > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 451px;
+}
+.item > div h3{
+    font-family: 'Sora';
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+line-height: 56px;
+letter-spacing: 0px;
+text-align: center;
+
+}
+
+.itemG{
+    background-color: #E7F0F4;
+}
+
+.item >div p{
+    margin-bottom: 20px;
+    margin-top: 7px;
+    font-family: 'Barlow';
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.15px;
+text-align: center;
+
+}
+
+
+
+.pCard1 {
+  width: 100%;              /* container takes full width */
+  max-width: 490px;   
+
+}
+
+.pCardImg {
+  /* width: 100% ;   Image scales with parent */
+  height: auto ;  /* Maintain aspect ratio */
+  object-fit: contain;      /* or 'cover' depending on design */
+}
+
+
+
+.learnBtn{
+
+    font-family: 'Barlow';
+font-weight: 400;
+font-size: 20px;
+line-height: 16px;
+letter-spacing: 0px;
+
+
+
+ width: 175px;
+  height: 48px;
+  padding: 18px 24px;
+  padding-left: 20px;
+  border-radius: 8px;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  transition: all 0.3s;
+}
+
+
+.learnBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.learnBtn svg path{
+    fill: black;
+}
+
+.learnBtn:hover {
+  border: 1px solid transparent;
+  background-color: #66b8ff;
+  gap: 9px;
+}
+
+.learnBtn:hover svg {
+  transform: rotate(45deg);
+}
+
+
+
+/* Medium screens (tablet) */
+@media (max-width: 1024px) {
+  .frame60 h1 {
+    font-size: 40px;
+    line-height: 100%;
+  }
+
+  .frame60 p {
+    font-size: 18px;
+  }
+  .row1{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item{
+    width: 100%;
+  }
+  .pCardImg{
+    width: 50%;
+  }
+}
+
+@media (min-width:993px) {
+    .frame61{
+         padding: 80px 31px; 
+    }
+}
+
+@media (max-width:993px){
+    .learnBtn{
+        font-size: 16px;
+        width: 150px;
+        padding: 7px 14px;
+        gap: 6px;
+        height: 41px;
+    }
+} 
+
+
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  
+
+  .item div p{
+    font-size: 16px;
+  }
+
+  .frame60 p {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens (smaller mobile) */
+@media (max-width: 480px) {
+  .frame60 h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .frame61{
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+  .item div h3{
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  
+}
+
+
+@media (max-width:426px) {
+    .learnBtn{
+        width: 143px;
+        padding: 16px 20px 16px 18px;
+    }
+    .learnBtn span{
+        font-size: 16px;
+    }
+}

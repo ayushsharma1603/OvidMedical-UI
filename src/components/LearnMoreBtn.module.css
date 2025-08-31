@@ -1,0 +1,39 @@
+.learnBtn {
+  /* width: 174px; */
+  max-width: 174px;
+  height: 52px;
+  padding: 18px 24px;
+  padding-left: 20px;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0px;
+
+  transition: all 0.3s;
+}
+
+.learnBtn svg {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.learnBtn:hover {
+  border: 1px solid transparent;
+  background-color: #66b8ff;
+  gap: 10px;
+}
+
+.learnBtn:hover svg {
+  transform: rotate(45deg);
+}

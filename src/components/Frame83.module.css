@@ -1,0 +1,201 @@
+.frame83 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.frame82 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.frame26 {
+  max-width: 792px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.frame26 p {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.18px;
+  text-align: center;
+  color: black;
+}
+
+.frame26 h1 {
+  font-family: "Sora";
+  text-align: start;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.frame25 {
+  max-width: 655px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.frame25 p {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.15px;
+}
+
+.btnsDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.learnBtn {
+  width: 174px;
+  height: 52px;
+  padding: 18px 24px;
+  padding-left: 20px;
+  border-radius: 8px;
+  background: #1e72be;
+  color: white;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0px;
+
+  transition: all 0.3s;
+}
+
+.learnBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.learnBtn:hover {
+  border: 1px solid transparent;
+  background-color: #66b8ff;
+  gap: 9px;
+}
+
+.learnBtn:hover svg {
+  transform: rotate(45deg);
+}
+
+.btn {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  border: none;
+  padding: 18px 24px;
+  color: black;
+  background: transparent;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  /* max-width: 144px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn:hover {
+  background: #66b8ff;
+}
+
+.imageContainer {
+  max-width: 1600;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1600px) {
+  .frame82 {
+    gap: 40px;
+  }
+  .frame25 {
+    max-width: 498px;
+  }
+  .frame26 {
+    max-width: 600px;
+  }
+  .frame26 h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 804px) {
+  .frame82 {
+    flex-direction: column;
+  }
+  .frame25 {
+    max-width: 100%;
+    align-items: center;
+  }
+  .frame26 H1 {
+    text-align: center;
+  }
+  .frame26 {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 426px) {
+  .frame26 h1 {
+    font-size: 20px;
+  }
+  .frame26 p {
+    font-size: 16px;
+  }
+  .frame25 {
+    align-items: center;
+    /* text-align: center; */
+    gap: 20px;
+  }
+  .frame25 p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .frame25 div {
+    flex-direction: column;
+  }
+  .learnBtn {
+    width: 143px;
+    padding: 16px 20px 16px 18px;
+  }
+  .learnBtn span {
+    font-size: 16px;
+  }
+  .frame83 {
+    gap: 18px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .btn {
+    font-size: 16px;
+    width: 140px;
+    padding: 16px 20px 16px 18px;
+  }
+}
