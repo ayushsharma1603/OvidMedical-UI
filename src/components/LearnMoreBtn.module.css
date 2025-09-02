@@ -1,15 +1,16 @@
 .learnBtn {
   /* width: 174px; */
-  max-width: 174px;
+  max-width: 180px;
+  width: 180px;
   height: 52px;
-  padding: 18px 24px;
-  padding-left: 20px;
+  padding: 13px 24px;
+  padding-left: 18px;
   border-radius: 8px;
   background: transparent;
   color: white;
   border: 1px solid white;
   display: flex;
-  gap: 17px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
@@ -22,16 +23,35 @@
 
   transition: all 0.3s;
 }
+.learnBtn span{
+  
+  font-family: "Barlow";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+}
+.learnBtn div{
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.learnBtn svg {
+.learnBtn div svg {
+  
+  /* transform: scale(1.04); */
   transition: transform 0.3s ease;
   width: 100%;
+  height: auto;
 }
 
 .learnBtn:hover {
   border: 1px solid transparent;
   background-color: #66b8ff;
-  gap: 10px;
+  gap: 14px;
 }
 
 .learnBtn:hover svg {

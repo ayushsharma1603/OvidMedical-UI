@@ -4,7 +4,8 @@ const LearnMoreBtn = (props) => {
     <div>
       <button className={styles.learnBtn}>
         <span>{props.content}</span>
-        <svg
+        <div>
+          <svg
           width="14"
           height="14"
           viewBox="0 0 14 14"
@@ -16,6 +17,8 @@ const LearnMoreBtn = (props) => {
             fill="white"
           />
         </svg>
+        </div>
+        
       </button>
     </div>
   );

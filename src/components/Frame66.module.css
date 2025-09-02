@@ -108,7 +108,7 @@ text-align: center;
 
 .bgContainer{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: auto;
     z-index: 1;
     overflow: hidden;
